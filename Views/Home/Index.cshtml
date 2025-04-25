@@ -4,31 +4,46 @@
 
 @model List<Article>
 
-<h1>BBC Articles</h1>
+<div class="search-header">
+    <h1>BBC Articles</h1>
+    <div class="article-count">Showing @Model.Count of @ViewBag.TotalArticles articles</div>
+</div>
 
-<form asp-action="Index" method="get">
-    <input type="text" name="searchQuery" placeholder="Search articles..." value="@Context.Request.Query["searchQuery"]" />
-    <button type="submit">Search</button>
+<form asp-action="Index" method="get" class="search-form">
+    <div class="search-controls">
+        <input type="text" name="searchQuery" placeholder="Search articles..." 
+               value="@ViewBag.CurrentSearch" class="search-input">
+        
+        <select name="sectionFilter" class="section-filter">
+            <option value="">All Sections</option>
+            <option value="news" selected="@(ViewBag.CurrentSection == "news")">News</option>
+            <option value="sport" selected="@(ViewBag.CurrentSection == "sport")">Sport</option>
+            <option value="culture" selected="@(ViewBag.CurrentSection == "culture")">Culture</option>
+        </select>
+        
+        <button type="submit" class="search-button">Search</button>
+    </div>
 </form>
 
-@if (Model.Any())
-{
-    <div class="article-grid">
-        @foreach (var article in Model)
-        {
-            <div class="article-card">
-                <h3>@article.Title</h3>
+<div class="article-grid">
+    @foreach (var article in Model)
+    {
+        <div class="article-card">
+            <!-- Your existing card content -->
+            <h3>@article.Title</h3>
                 <div class="badge">@article.Section</div>
                 <p>@article.Summary.Substring(0, Math.Min(article.Summary.Length, 200))...</p>
                 <a href="/articles/@System.Web.HttpUtility.UrlEncode(article.Url.Split('/').Last())" 
                     class="btn btn-sm btn-outline-primary">
                     Read Full Article
                 </a>
-            </div>
-        }
-    </div>
-}
-else
+        </div>
+    }
+</div>
+
+@if (!Model.Any())
 {
-    <p>No articles found.</p>
+    <div class="no-results">
+        No articles found matching your search criteria.
+    </div>
 }
