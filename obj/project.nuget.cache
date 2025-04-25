@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "27i1hsiwIj8=",
+  "success": true,
+  "projectFilePath": "D:\\Python\\Script\\Scrapper\\Scrapper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lefes\\.nuget\\packages\\system.io.pipelines\\9.0.4\\system.io.pipelines.9.0.4.nupkg.sha512",
+    "C:\\Users\\lefes\\.nuget\\packages\\system.text.encodings.web\\9.0.4\\system.text.encodings.web.9.0.4.nupkg.sha512",
+    "C:\\Users\\lefes\\.nuget\\packages\\system.text.json\\9.0.4\\system.text.json.9.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
