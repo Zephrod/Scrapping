@@ -20,10 +20,10 @@ public class ArticleService
 
         var json = File.ReadAllText(path);
         var options = new JsonSerializerOptions
-        {
-            PropertyNameCaseInsensitive = true,
-            AllowTrailingCommas = true
-        };
+{
+    PropertyNameCaseInsensitive = true,
+    AllowTrailingCommas = true
+};
 
 var articles = JsonSerializer.Deserialize<List<Article>>(json, options) ?? new List<Article>();
 
@@ -31,7 +31,14 @@ var articles = JsonSerializer.Deserialize<List<Article>>(json, options) ?? new L
             ? articles 
             : articles.Where(a => 
                 (a.Title?.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ?? false) ||
-                (a.Content?.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ?? false)
+                (a.Summary?.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ?? false) ||
+                (a.Section?.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ?? false)
               ).ToList();
+    }
+    public Article? GetArticleById(string id)
+    {
+        var allArticles = GetArticles();
+        return allArticles.FirstOrDefault(a => 
+            a.Url.Split('/').Last().Equals(id, StringComparison.OrdinalIgnoreCase));
     }
 }

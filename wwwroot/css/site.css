@@ -1,20 +1,64 @@
 .article-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .article-card {
-  border: 1px solid #ddd;
-  padding: 15px;
-  border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
 }
 
 .badge {
+    background: #007bff;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 5px 0;
+}
+/* Search form styling */
+form {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  padding: 8px 15px;
   background: #007bff;
   color: white;
-  padding: 2px 8px;
+  border: none;
   border-radius: 4px;
-  display: inline-block;
-  margin: 5px 0;
+  cursor: pointer;
+}
+.article-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.article-meta {
+  margin: 1rem 0;
+  color: #666;
+}
+
+.article-content {
+  line-height: 1.6;
+  margin: 2rem 0;
+  font-size: 1.1rem;
+}
+
+.article-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
 }

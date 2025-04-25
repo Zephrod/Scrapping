@@ -19,9 +19,11 @@
             <div class="article-card">
                 <h3>@article.Title</h3>
                 <div class="badge">@article.Section</div>
-                <p>@article.Content.Substring(0, Math.Min(article.Content.Length, 200))...</p>
-                <a href="@article.Url" target="_blank" class="btn btn-primary">Read Full Article</a>
-                <div class="timestamp">Scraped: @article.ScrapedAt.ToLocalTime().ToString("g")</div>
+                <p>@article.Summary.Substring(0, Math.Min(article.Summary.Length, 200))...</p>
+                <a href="/articles/@System.Web.HttpUtility.UrlEncode(article.Url.Split('/').Last())" 
+                    class="btn btn-sm btn-outline-primary">
+                    Read Full Article
+                </a>
             </div>
         }
     </div>

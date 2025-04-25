@@ -5,6 +5,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<ArticleService>();
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -21,6 +23,12 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+// Replace your current MapControllerRoute calls with:
+app.MapControllerRoute(
+    name: "article",
+    pattern: "articles/{id}",
+    defaults: new { controller = "Home", action = "Article" });
 
 app.MapControllerRoute(
     name: "default",
