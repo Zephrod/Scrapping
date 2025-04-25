@@ -1,7 +1,83 @@
 @model Article
 
-<h1>@Model.Title</h1>
-<p>@Model.Content</p>
-<a href="@Model.Url">BBC page</a>
-<br>
-<a href="/">Back to list</a>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Model.Title</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .article-container {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #1a1a1a;
+            margin-top: 0;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 15px;
+        }
+        .article-content {
+            margin-bottom: 30px;
+        }
+        .article-meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #bb1919;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #a00000;
+        }
+        .button.secondary {
+            background-color: #444;
+            margin-left: 10px;
+        }
+        .button.secondary:hover {
+            background-color: #2e2e2e;
+        }
+        .button-container {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <h1>@Model.Title</h1>
+        
+        <!-- Aucune date de publication disponible dans le modèle actuel -->
+        <!-- <div class="article-meta">
+            Publié le [date]
+        </div> -->
+        
+        <div class="article-content">
+            @Html.Raw(Model.Content)
+        </div>
+        
+        <div class="button-container">
+            <a href="@Model.Url" class="button" target="_blank">Voir l'article original</a>
+            <a href="/" class="button secondary">Retour à la liste</a>
+        </div>
+    </div>
+</body>
+</html>

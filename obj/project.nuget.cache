@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "27i1hsiwIj8=",
+  "dgSpecHash": "X4b38V2199I=",
   "success": true,
-  "projectFilePath": "D:\\Python\\Script\\Scrapper\\Scrapper.csproj",
+  "projectFilePath": "C:\\Users\\polob\\Document_Projet_Ecole_Tunis\\Scrapping\\Scrapper.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\lefes\\.nuget\\packages\\system.io.pipelines\\9.0.4\\system.io.pipelines.9.0.4.nupkg.sha512",
-    "C:\\Users\\lefes\\.nuget\\packages\\system.text.encodings.web\\9.0.4\\system.text.encodings.web.9.0.4.nupkg.sha512",
-    "C:\\Users\\lefes\\.nuget\\packages\\system.text.json\\9.0.4\\system.text.json.9.0.4.nupkg.sha512"
+    "C:\\Users\\polob\\.nuget\\packages\\system.io.pipelines\\9.0.4\\system.io.pipelines.9.0.4.nupkg.sha512",
+    "C:\\Users\\polob\\.nuget\\packages\\system.text.encodings.web\\9.0.4\\system.text.encodings.web.9.0.4.nupkg.sha512",
+    "C:\\Users\\polob\\.nuget\\packages\\system.text.json\\9.0.4\\system.text.json.9.0.4.nupkg.sha512"
   ],
   "logs": []
 }
