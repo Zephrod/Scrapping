@@ -201,19 +201,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\polob\\.nuget\\packages\\": {}
+    "C:\\Users\\lefes\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\polob\\Document_Projet_Ecole_Tunis\\Scrapping\\Scrapper.csproj",
+      "projectUniqueName": "D:\\Python\\Script\\Scrapper\\Scrapper.csproj",
       "projectName": "Scrapper",
-      "projectPath": "C:\\Users\\polob\\Document_Projet_Ecole_Tunis\\Scrapping\\Scrapper.csproj",
-      "packagesPath": "C:\\Users\\polob\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\polob\\Document_Projet_Ecole_Tunis\\Scrapping\\obj\\",
+      "projectPath": "D:\\Python\\Script\\Scrapper\\Scrapper.csproj",
+      "packagesPath": "C:\\Users\\lefes\\.nuget\\packages\\",
+      "outputPath": "D:\\Python\\Script\\Scrapper\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\polob\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\lefes\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

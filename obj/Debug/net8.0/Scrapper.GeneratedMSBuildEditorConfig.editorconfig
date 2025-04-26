@@ -9,43 +9,43 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Scrapper
 build_property.RootNamespace = Scrapper
-build_property.ProjectDir = C:\Users\polob\Document_Projet_Ecole_Tunis\Scrapping\
+build_property.ProjectDir = D:\Python\Script\Scrapper\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\polob\Document_Projet_Ecole_Tunis\Scrapping
+build_property.MSBuildProjectDirectory = D:\Python\Script\Scrapper
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/polob/Document_Projet_Ecole_Tunis/Scrapping/Views/Home/Article.cshtml]
+[D:/Python/Script/Scrapper/Views/Home/Article.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBcnRpY2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/polob/Document_Projet_Ecole_Tunis/Scrapping/Views/Home/Index.cshtml]
+[D:/Python/Script/Scrapper/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/polob/Document_Projet_Ecole_Tunis/Scrapping/Views/Home/Privacy.cshtml]
+[D:/Python/Script/Scrapper/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/polob/Document_Projet_Ecole_Tunis/Scrapping/Views/Shared/Error.cshtml]
+[D:/Python/Script/Scrapper/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/polob/Document_Projet_Ecole_Tunis/Scrapping/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Python/Script/Scrapper/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/polob/Document_Projet_Ecole_Tunis/Scrapping/Views/_ViewImports.cshtml]
+[D:/Python/Script/Scrapper/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/polob/Document_Projet_Ecole_Tunis/Scrapping/Views/_ViewStart.cshtml]
+[D:/Python/Script/Scrapper/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/polob/Document_Projet_Ecole_Tunis/Scrapping/Views/Shared/_Layout.cshtml]
+[D:/Python/Script/Scrapper/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-bnobi5100e
